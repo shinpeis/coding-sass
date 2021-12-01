@@ -1,74 +1,218 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Coding Practice</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Shiro</title>
 </head>
-
 <body>
   <header class="header">
-    <div class="header-inner">
-      <h1>
-        <a href="#"><img src="img/Codingpractice-cutout.png" alt="ロゴ画像"></a>
-      </h1>
-    
-      <nav class="header-nav">
-        <ul class="header-nav-list">
-          <li class="header-nav-list-item"><a href="#">Top</a></li>
-          <li class="header-nav-list-item"><a href="#">My Challenge</a></li>
-          <li class="header-nav-list-item"><a href="#">Just Continue</a></li>
-        </ul>
-      </nav>
+    <div class="header__wrapper">
+      <figure class="logo"><img src="img/logo-link.png" alt="ロゴ"></figure>
+      <a id="drawer_toggle" href="#"><img src="img/button.png" alt="ハンバーガーメニュー">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
     </div>
+    <nav id="global_nav">
+      <div class="close"><span class="batsu"></span></div>
+      <ul>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#florist">Florist</a></li>
+        <li><a href="#info">Shop information</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
   </header>
-
-  <div class="key-visual">
-    <div class="key-visual-content">
-      <h1 class="key-visual-ttl">Coding Practice Everyday!!</h1>
-      <p class="key-visual-txt">Start from HERE</p>
+  <section>
+    <div class="mainvisual" style="background-image: url(img/header.png);">
+      <div class="mainvisual__wrapper">
+        <figure class="mainvisual-title"><img src="img/logo.png" alt="タイトルロゴ"></figure>
+        <p class="mainvisual__text">- White flower shop -</p>
+      </div>
     </div>
-  </div>
-
-  <section class="contents">
-    <div class="contents-inner">
-      <h2 class="section-ttl">My Challenge</h2>
-      <div class="wrapper">
-        <div class="contents-box">
-          <figure class="contents-box-img"><img src=img/post0628.png></figure>
-          <div class="contents-box-info">
-            <h2>もくもく会in大阪のコーディングイベントに参加してきました！！</h2><time datetime="date">2020.06.28</h2></time>
-          </div>
-        </div>
-        <div class="contents-box">
-          <figure class="contents-box-img"><img src=img/post0702.png></figure>
-          <div class="contents-box-info">
-            <h2>模写コーディングを1つ終わらせることができました！！次はもう少し難しいものに挑戦します！</h2><time datetime="date">2020.07.02</h2></time>
-          </div>
-        </div>
-        <div class="contents-box">
-          <figure class="contents-box-img"><img src=img/post0710.png></figure>
-          <div class="contents-box-info">
-            <h2>「一冊ですべて身につくHTMLとＷebデザイン入門講座」を完走しました！！</h2><time datetime="date">2020.07.10</h2></time>
-          </div>
+  </section>
+  <section>
+    <div class="concept" id="concept">
+      <div class="section__wrapper">
+        <h1 class="section__title">Concept</h1>
+        <p class="section__text">私たちShiroは、白いお花だけを取り扱うフラワーショップです。<br> 色とりどりの花束も素敵だけれど、洗練された「白」の美しさを感じてほしい。<br> 「白」に対する愛から生まれた静寂な時間が流れる店へ、ぜひお越しください。</p>
+      </div>
+      <figure class="concept__img">
+        <img class="concept__img-item" src="img/concept.jpg" alt="コンセプト">
+      </figure>
+      <div class="concept__background"></div>
+    </div>
+  </section>
+  <section>
+    <div class="section__wrapper"  id="works">
+      <h1 class="section__title">Works</h1>
+        <p class="section__text">オーダーメイドでのブーケ・アレンジメントのデザインのほか、<br> ウェディングやイベントの装花なども行なっています。<br> 一人一人にあったご提案をさせていただきます。</p>
+      </div>
+      
+    </div>
+    <div class="grid-layout">
+      <div class="gift">
+        <figure class="grid-layout__img"><img src="img/work_gift.png" alt="ギフト"></figure>
+        <figure class="grid-layout__img-sp"><img src="img/work_gift-sp.jpg" alt="ギフト"></figure>
+        <div class="grid-item">
+          <h2 class="grid-item__title">Gift</h2>
+          <p class="grid-item__text">花束をお送りしたいお相手、伝えたいお気持ちに合わせたプレゼント用花束のアレンジメントをさせていただきます。花言葉などの豆知識もお伝えします。</p>
         </div>
       </div>
-      <a href="#" class="btn" >もっと見る</a>
+      <div class="decolation">
+        <figure class="grid-layout__img"><img src="img/decoration.jpg" alt="デコレーション"></figure>
+        <figure class="grid-layout__img-sp"><img src="img/decoration-sp.jpg" alt="デコレーション"></figure>
+        <div class="grid-item">
+          <h2 class="grid-item__title">Decoration</h2>
+          <p class="grid-item__text">お写真を彩るお花を一輪から販売。一定期間のご契約で定期的にご自宅へ配送させていただくことも可能です。</p>
+        </div>
+      </div>
+      <div class="wedding">
+        <figure class="grid-layout__img"><img src="img/work_wedding.png" alt="ウェディング"></figure>
+        <figure class="grid-layout__img-sp"><img src="img/work_wedding-sp.jpg" alt="ウェディング"></figure>
+        <div class="grid-item">
+          <h2 class="grid-item__title">Wedding</h2>
+          <p class="grid-item__text">ウエディングドレスに合わせたブーケや式場の雰囲気に合う装花をご提案。お打ち合わせの流れや回数、費用などにつきましてはお問い合わせください。</p>
+        </div>
+      </div>
+      <div class="for-yourself">
+        <figure class="grid-layout__img"><img src="img/for-yourself.jpg" alt="自分に贈る"></figure>
+        <figure class="grid-layout__img-sp"><img src="img/for-yourself-sp.png" alt="自分に贈る"></figure>
+        <div class="grid-item">
+          <h2 class="grid-item__title">For yourself</h2>
+          <p class="grid-item__text">お部屋の雰囲気やライフスタイルをお聞きしてご自宅用の花束をご提案し、少しでも長く咲かせるコツもお教えします。花束に合った花瓶をご提案することも可能です。</p>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="cta">
-    <div class="cta-inner">
-      <h2 class="section-ttl-03">Just Continue</h2>
-      <p class="cta-txt">日々、学び続ける<br>いつか、Webで世界を今より少しだけ<br>よくするために<br>でも、今は自分のために<br>毎日少しずつ勉強する<br>そんな私と共に学んでくれる方を募集しています</p>
-      <a href="#" class="cta-btn" >お問い合わせしてみる</a>
-    </div>
+  <section>
+    <div class="florist" id="florist">
+      <div class="section__wrapper">
+        <h1 class="section__title">Florist</h1>
+        <p class="section__text">Shiro専属のフローリストたちをご紹介。<br>  得意の分野であなたのオーダーを最大限に叶えます。</p>
+      </div>
+      <div class="cards cards--col3">
+        <div class="cards__item card">
+          <figure class="card__img-wrapper">
+            <img class="card__img" alt="写真：Shiyu" src="img/shiyu.jpg">
+            <img class="card__img-sp" src="img/shiyu-sp.jpg" alt="写真：Shiyu">
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">
+              Shiyu
+            </h3>
+            <p class="card__text">
+              お花茶屋大学フラワーアレンジメント科を卒業後、さまざまな白い花を探すために世界を一周し、Shiroの創業者となる。
+            </p>
+          </div>
+          <!-- /.card__body -->
+        </div>
+        <!-- /.cards__item card -->
+        <div class="cards__item card">
+          <figure class="card__img-wrapper">
+            <img class="card__img" alt="写真：Mao" src="img/mao.jpg">
+            <img class="card__img-sp" src="img/mao-sp.jpg" alt="写真：Mao">
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">
+              Mao
+            </h3>
+            <p class="card__text">
+              花の魅力に惹かれ、空間デザインの世界からフローリストの道を歩む。主に結婚式やイベントで使用するお花のディレクション担当。
+            </p>
+          </div>
+          <!-- /.card__body -->
+        </div>
+        <!-- /.cards__item card -->
+        <div class="cards__item card">
+          <figure class="card__img-wrapper">
+            <img class="card__img" alt="写真：Omichan" src="img/omichan.jpg">
+            <img class="card__img-sp" src="img/omichan-sp.jpg" alt="写真：Omichan">
+          </figure>
+          <div class="card__body">
+            <h3 class="card__title">
+              Omichan
+            </h3>
+            <p class="card__text">
+              フローリスト兼ガーデナーという特殊な経歴をもつ。豊富な知識と技術でお客様のオーダーを叶える。
+            </p>
+          </div>
+          <!-- /.card__body -->
+        </div>
+        <!-- /.cards__item card -->
+      </div>
+      <!-- /.cards cards--col3 -->
+    </div>    
   </section>
-  <footer class="footer"
-    <p><small>copyright(C) 2020 しょーごログ All Rights Reserved.</small></p>
+  <section>
+    <div class="info" id="info">
+      <div class="section__wrapper">
+        <h1 class="section__title">Shop information</h1>
+        <p class="section__text">Shiroの店舗情報をご紹介します。</p>
+      </div>
+    </div>
+    <div class="info__wrapper">
+      <div class="info__img">
+        <figure class="info__img-item">
+          <img src="img/shop.jpg" alt="お店イメージ">
+        </figure>
+      </div>
+      <!-- info__img -->
+      <div class="horizontal-table">
+        <table class="horizontal-table__inner">
+          <tbody class="horizontal-table__body">
+            <tr class="horizontal-table__row">
+              <th class="horizontal-table__header">住所</th>
+              <td class="horizontal-table__text">〒810-0001<br> 福岡県福岡市中央区天神0-0-0</td>
+            </tr>
+            <tr class="horizontal-table__row">
+              <th class="horizontal-table__header">電話番号</th>
+              <td class="horizontal-table__text">0120-000-000</td>
+            </tr>
+            <tr class="horizontal-table__row">
+              <th class="horizontal-table__header">営業時間</th>
+              <td class="horizontal-table__text">11:00-20:30 （定休日：水曜日）</td>
+            </tr>
+            <tr class="horizontal-table__row">
+              <th class="horizontal-table__header">アクセス</th>
+              <td class="horizontal-table__text">天神駅12a出口から徒歩6分、<br>東京駅8b出口から徒歩12分</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- horizontal-table -->
+    </div>
+    <!-- info__wrapper -->
+  </section>
+  <section>
+    <div class="cta" id="contact" style="background-image: url(img/contact_us.png);">
+      <div class="cta__bg-mask">
+        <div class="section__wrapper">
+          <h1 class="section__title">Contact us</h1>
+          <p class="section__text">イベントや結婚式でご利用する装花のご相談や、<br> フラワーアレンジメントのご予約などはこちらからお問い合わせください。</p>
+        </div>
+        <div class="cta__btn">
+          <a class="btn" href="#"><img src="img/mail.jpg" alt="メール">お問い合わせ</a>
+        </div>
+      </div>
+    </div>
+    <!-- cta__bg-mask -->
+    <!-- cta -->
+  </section>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <p class="footer__text">Copyright © Shiro All Rights Reserved.</p>
+    </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
